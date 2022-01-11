@@ -19,7 +19,9 @@ jobs:
     # You may pin to the exact commit or the version.
     # uses: php-actions/composer@d936bcb900310224b9089aff3337f2221a8df9a0
         uses: php-actions/composer@v6
-        
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}                
       - name: Psalm – Static Analysis for PHP
         # You may pin to the exact commit or the version.
         # uses: psalm/psalm-github-actions@2e545d38ff4387b370449e2673088cc8dc40cf1d
