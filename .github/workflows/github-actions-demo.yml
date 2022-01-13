@@ -2,8 +2,8 @@ name: GitHub Actions Demo
 on: [push]
 jobs:
   Explore-GitHub-Actions:
-    runs-on: ubuntu-latest
-#    runs-on: self-hosted
+#    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
@@ -32,8 +32,8 @@ jobs:
 #        # uses: psalm/psalm-github-actions@2e545d38ff4387b370449e2673088cc8dc40cf1d
 #        uses: psalm/psalm-github-actions@1.1.2
   Another-Step:
-    runs-on: ubuntu-latest
-#    runs-on: self-hosted
+#    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
