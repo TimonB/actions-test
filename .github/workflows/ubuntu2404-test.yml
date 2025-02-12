@@ -1,0 +1,14 @@
+name: GitHub Actions Demo
+on:
+    workflow_dispatch:
+
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-24.04
+#    runs-on: self-hosted
+    steps:
+      - name: Test
+        run: |
+          env
+          which pip
+          pip install cloudsmith-cli
